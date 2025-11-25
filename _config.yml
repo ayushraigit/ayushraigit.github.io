@@ -1,5 +1,36 @@
 title: Ayush Rai
-subtitle: Data Engineer | Transitioning from Analytics
-description: Building modern, scalable data pipelines • Python • SQL • dbt • Airflow • Cloud
+description: Data Engineer | Transitioning from Analytics
+url: https://ayushraigit.github.io
+
+# === PERSONAL INFO ===
 name: Ayush Rai
 email: your.email@gmail.com
+tagline: Building scalable data pipelines with Python • SQL • dbt • Airflow • Cloud
+
+# === SOCIAL LINKS ===
+social:
+  - icon: github
+    url: https://github.com/ayushraigit
+  - icon: linkedin
+    url: https://linkedin.com/in/yourprofile
+  - icon: envelope
+    url: mailto:your.email@gmail.com
+
+# === PROFILE PHOTO ===
+profile_pic: /images/prof_pic.jpg   # make sure this file exists in /images/
+
+# === THEME & STYLE ===
+style: minimal         # clean, modern, centered by default
+google_analytics:      # leave blank
+show_downloads: false
+
+# === NAVIGATION ===
+navigation:
+  - name: About
+    link: /
+  - name: Projects
+    link: /projects/
+  - name: Blog
+    link: /blog/
+  - name: CV
+    link: /cv/
