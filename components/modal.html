@@ -1,0 +1,21 @@
+<!-- PDF / Document Preview Modal -->
+<div class="modal-overlay" id="pdfModalOverlay">
+    <div class="modal" id="pdfModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle">Document Preview</h3>
+            <div class="modal-buttons">
+                <!-- Open in new tab -->
+                <a href="#" class="modal-open-btn" id="modalOpenBtn" target="_blank" aria-label="Open in new tab">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                <!-- Close modal -->
+                <button class="modal-close-btn" aria-label="Close modal" onclick="closePdfModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <iframe id="pdfIframe" src="" frameborder="0" title="Document Preview"></iframe>
+        </div>
+    </div>
+</div>

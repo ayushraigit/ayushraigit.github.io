@@ -1,0 +1,123 @@
+<!-- Projects Section -->
+<section class="projects section horizontal-scroll-enabled" id="projects">
+    <div class="container">
+        <div class="section-heading">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Simplified filters – only what you need -->
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">All Projects</button>
+            <button class="filter-button" data-filter="de">Data Engineering</button>
+            <button class="filter-button" data-filter="analytics">Analytics / ML</button>
+        </div>
+
+        <div class="scroll-arrow-container">
+            <button class="scroll-arrow prev-arrow" aria-label="Previous items">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-arrow next-arrow" aria-label="Next items">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="horizontal-scroll-wrapper">
+            <div class="scroll-content projects-grid">
+
+                <!-- ★ STAR PROJECT – NYC Taxi Medallion Pipeline ★ -->
+                <div class="project-card featured" data-category="de">
+                    <div class="project-image">
+                        <img src="assets/projects/nyc-taxi-placeholder.jpg" alt="NYC Taxi Medallion Pipeline">
+                        <!-- Replace later with a real architecture diagram -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NYC Taxi Medallion Pipeline</h3>
+                        <p class="project-description">
+                            End-to-end modern data pipeline on <strong>2M+ real NYC taxi trips</strong> using Bronze → Silver → Gold (medallion) architecture.<br>
+                            • Python ingestion → DuckDB storage<br>
+                            • dbt models, tests, docs & lineage<br>
+                            • Ready to scale to Airflow + Snowflake/AWS
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">dbt</span>
+                            <span class="tech-tag">DuckDB</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Medallion Architecture</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ayushraigit/nyc-taxi-data-pipeline" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Live Repo
+                            </a>
+                            <a href="javascript:void(0)" class="project-link" onclick="openPdfModal('assets/projects/nyc-taxi-architecture.pdf','NYC Taxi Pipeline Architecture')">
+                                <i class="fas fa-file-alt"></i> Architecture Diagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon – Airflow Orchestration -->
+                <div class="project-card" data-category="de">
+                    <div class="project-image placeholder">
+                        <div class="coming-soon">Coming Soon</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Airflow Multi-DAG Orchestration</h3>
+                        <p class="project-description">
+                            Production-grade DAGs scheduling the NYC Taxi pipeline + additional sources.<br>
+                            • Dynamic tasks • SLA alerts • Dockerised deployment
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon – Cloud Migration (AWS / Snowflake) -->
+                <div class="project-card" data-category="de">
+                    <div class="project-image placeholder">
+                        <div class="coming-soon">Coming Soon</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cloud Warehouse Migration</h3>
+                        <p class="project-description">
+                            Migrating the full pipeline to AWS (S3 → Glue → Athena) or Snowflake.<br>
+                            • Cost optimisation • Partitioning • CI/CD with GitHub Actions
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">AWS / Snowflake</span>
+                            <span class="tech-tag">Terraform (planned)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics / ML Project from your resume (optional showcase) -->
+                <div class="project-card" data-category="analytics">
+                    <div class="project-image">
+                        <img src="assets/projects/water-analytics.jpg" alt="Water Consumption Analytics">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Water Consumption & Infrastructure Analytics</h3>
+                        <p class="project-description">
+                            Real-time IoT sensor analytics at South East Water.<br>
+                            AWS ETL → Snowflake → Power BI dashboards + predictive maintenance models.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-note">Company Project – South East Water</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End scroll-content -->
+        </div> <!-- End horizontal-scroll-wrapper -->
+    </div>
+</section>
